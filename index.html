@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <!-- displays site properly based on user's device -->
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+               rel="stylesheet"
+          />
+
+          <link
+               rel="icon"
+               type="image/png"
+               sizes="32x32"
+               href="./images/favicon-32x32.png"
+          />
+
+          <link rel="stylesheet" href="./scss/style.css" />
+          <script src="./script.js          " defer></script>
+
+          <title>Frontend Mentor | Interactive pricing component</title>
+
+          <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+          <style>
+               .attribution {
+                    font-size: 11px;
+                    text-align: center;
+               }
+               .attribution a {
+                    color: hsl(228, 45%, 44%);
+               }
+          </style>
+     </head>
+     <body>
+          <div class="outer-container">
+               <header>
+                    <div class="title-wrap">
+                         <h1>Simple, traffic-based pricing</h1>
+                         <h3>
+                              Sign-up for our 30-day trial. No credit card
+                              required.
+                         </h3>
+                    </div>
+               </header>
+               <div class="body-container">
+                    <div class="top">
+                         <div class="views">
+                              <div class="view-count"></div>
+                              <div class="month-price-wrap">
+                                   <div class="month-price-amount"></div>
+                                   <div class="month">/month</div>
+                              </div>
+                              <div class="progress-bar-wrap">
+                                   <input
+                                        type="range"
+                                        min="1"
+                                        max="5"
+                                        value="3"
+                                        id="slide-range"
+                                        class="slide-range"
+                                   />
+                                   <div class="bar-percent"></div>
+                              </div>
+                         </div>
+                         
+
+                         <div class="top-footer-wrap">
+                              <span>Monthly Billing</span>
+                              <div class="slide-switch-wrap">
+                                   <div
+                                        class="slide-circle"
+                                        id="slide-circle"
+                                   ></div>
+                              </div>
+                              <span>Yearly Billing</span>
+                              <span class="discount-wrap"
+                                   > -25%
+                                   <span class="discount-text hide">discount</span>
+                              </span>
+                         </div>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                         <ul>
+                              <li>Unlimited websites</li>
+                              <li>100% data ownership</li>
+                              <li>Email reports</li>
+                         </ul>
+                         <button>Start my trial</button>
+                    </div>
+               </div>
+          </div>
+
+          <div class="attribution">
+               Challenge by
+               <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                    >Frontend Mentor</a
+               >. Coded by <a href="#">crb</a>.
+          </div>
+     </body>
+</html>
